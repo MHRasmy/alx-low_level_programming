@@ -8,11 +8,13 @@
 
 int main(void)
 {
-	char s[] = "and that piece of art is useful - Dora Korpar, 2015-10-19";
+	char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
 	int n = sizeof(s) / sizeof(s[0]);
 
-	for (int i = 0; i < n; i++)
+	int i = 0;
+
+	for (i = 0; i < n; i++)
 	{
 		putchar(s[i]);
 	}
