@@ -15,9 +15,9 @@ int main(void)
 	while (c < 10)
 	{
 		if (c < 10)
-			putchar('0' + i);
+			putchar('0' + c);
 		else
-			putchar('a' + i - 10);
+			putchar('a' + c - 10);
 		c++;
 	}
 	putchar('\n');
