@@ -20,12 +20,12 @@ int main(void)
 		{
 			for (k = 0; k <= 9; k++)
 			{
-				if (i != j && i < j)
+				if (i < j && j < k)
 				{
 					putchar('0' + i);
 					putchar('0' + j);
 					putchar('0' + k);
-					if (i != 8 || j != 9)
+					if (i != 7 || j != 8 || k != 9)
 					{
 						putchar(',');
 						putchar(' ');
