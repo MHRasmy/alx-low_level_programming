@@ -3,7 +3,7 @@
 /**
  * main - prints and that piece of art is useful"
  * - Dora Korpar, 2015-10-19
- * Return: Always 0 (success)
+ * Return: Always 0 (failure)
  */
 
 int main(void)
@@ -19,5 +19,5 @@ int main(void)
 		putchar(s[i]);
 	}
 	putchar('\n');
-	return (0);
+	return (1);
 }
