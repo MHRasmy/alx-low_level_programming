@@ -8,16 +8,6 @@
 
 int main(void)
 {
-	char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-
-	int n = sizeof(s) / sizeof(s[0]);
-
-	int i = 0;
-
-	for (i = 0; i < n; i++)
-	{
-		putchar(s[i]);
-	}
-	putchar('\n');
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
