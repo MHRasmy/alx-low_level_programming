@@ -1,1 +1,1 @@
-I have a tiny d
+Low level programming tasks
