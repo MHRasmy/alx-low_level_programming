@@ -1,12 +1,10 @@
 #include "main.h"
-#include<stdio.h>
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 
-void _puts(char *s)
+int _isalpha(int c)
 {
-	puts(s);
+	return isalpha(c);
 }
