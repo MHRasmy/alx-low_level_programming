@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ..
+git add .
+git commit -m "implementing 0-print_listint.c"
+git push
