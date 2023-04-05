@@ -7,7 +7,7 @@
  * @head: pointer to the head of the list
  * @index: index of new node
  *
- * Returns: 1 if it succeeded, -1 if it failed
+ * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
