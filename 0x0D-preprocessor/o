@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "implementing 1-pi.h"
+git commit -m "implementing 2-main.c"
 git push
