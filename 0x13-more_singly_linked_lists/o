@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ..
 git add .
-git commit -m "implementing 6-pop_listint.c"
+git commit -m "implementing 7-get_nodeint.c"
 git push
