@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ..
 git add .
-git commit -m "implementing 4-free_listint.c"
+git commit -m "implementing 4-free_listint2.c"
 git push
