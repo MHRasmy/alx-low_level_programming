@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ..
 git add .
-git commit -m "implementing 8-sum_listint.c"
+git commit -m "implementing 9-insert_nodeint.c"
 git push
