@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ..
 git add .
-git commit -m "implementing 10-delete_nodeint.c"
+git commit -m "handling special case for empty list"
 git push
