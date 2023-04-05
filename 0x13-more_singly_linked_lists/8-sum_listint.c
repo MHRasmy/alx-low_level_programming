@@ -6,7 +6,7 @@
  * sum_listint - sum of all the data (n) of a listint_t
  * @head: pointer to the head of the list
  *
- * Return: sum, 0 if empty 
+ * Return: sum, 0 if empty
  */
 int sum_listint(listint_t *head)
 {
