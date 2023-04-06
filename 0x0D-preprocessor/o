@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ..
 git add .
-git commit -m "implementing 4-sum.h"
+git commit -m "handling special case for empty list"
 git push
