@@ -1,55 +1,47 @@
-#include <stdlib.h>
 #include "dog.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * new_dog - creates a new dog
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
+ * new_dog - Creates a new dog
  *
- * Return: pointer to the new dog
+ * @name: Name of the new dog
+ * @age: Age of the new dog
+ * @owner: Owner of the new dog
+ *
+ * Return: Pointer to a new dog of type dog_t
+ *         NULL if memory allocation fails
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    dog_t *new_dog;
-    int name_len, owner_len;
+	dog_t *new_dog;
+	int name_len, owner_len;
 
-    /* allocate memory for new dog */
-    new_dog = malloc(sizeof(dog_t));
-    if (new_dog == NULL)
-        return (NULL);
+	new_dog = malloc(sizeof(dog_t));
+	if (new_dog == NULL)
+		return (NULL);
 
-    /* find the length of name and owner */
-    for (name_len = 0; name[name_len] != '\0'; name_len++)
-        ;
-    for (owner_len = 0; owner[owner_len] != '\0'; owner_len++)
-        ;
+	name_len = strlen(name) + 1;
+	new_dog->name = malloc(name_len * sizeof(char));
+	if (new_dog->name == NULL)
+	{
+		free(new_dog);
+		return (NULL);
+	}
 
-    /* allocate memory for name and owner */
-    new_dog->name = malloc(sizeof(char) * (name_len + 1));
-    if (new_dog->name == NULL)
-    {
-        free(new_dog);
-        return (NULL);
-    }
-    new_dog->owner = malloc(sizeof(char) * (owner_len + 1));
-    if (new_dog->owner == NULL)
-    {
-        free(new_dog->name);
-        free(new_dog);
-        return (NULL);
-    }
+	owner_len = strlen(owner) + 1;
+	new_dog->owner = malloc(owner_len * sizeof(char));
+	if (new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog);
+		return (NULL);
+	}
 
-    /* copy name and owner to new dog */
-    for (name_len = 0; name[name_len] != '\0'; name_len++)
-        new_dog->name[name_len] = name[name_len];
-    new_dog->name[name_len] = '\0';
+	strncpy(new_dog->name, name, name_len);
+	new_dog->age = age;
+	strncpy(new_dog->owner, owner, owner_len);
 
-    for (owner_len = 0; owner[owner_len] != '\0'; owner_len++)
-        new_dog->owner[owner_len] = owner[owner_len];
-    new_dog->owner[owner_len] = '\0';
-
-    new_dog->age = age;
-
-    return (new_dog);
+	return (new_dog);
 }
