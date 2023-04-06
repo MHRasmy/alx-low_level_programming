@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "implementing 2-main.c"
+git commit -m "implementing "3-function_like_macro.h
 git push
