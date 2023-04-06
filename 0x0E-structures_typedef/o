@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ..
 git add .
-git commit -m "implementing 1-init_dog.c"
+git commit -m "implementing 2-print_dog.c"
 git push
