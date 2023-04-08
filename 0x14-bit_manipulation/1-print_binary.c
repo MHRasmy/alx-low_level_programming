@@ -15,7 +15,7 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	while ((bits << 1) <= n)
+	while (bits <= n >> 1)
 		bits <<= 1;
 
 	while (bits)
