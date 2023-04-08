@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ..
 git add .
-git commit -m "implementing 0-binary_to_uint.c"
+git commit -m "implementing 1-print_binary.c"
 git push
